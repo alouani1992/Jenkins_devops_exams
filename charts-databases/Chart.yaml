@@ -1,0 +1,5 @@
+apiVersion: v2
+name: exam-databases
+description: Bases PostgreSQL pour les API films et acteurs
+type: application
+version: 0.1.0

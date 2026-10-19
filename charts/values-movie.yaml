@@ -1,0 +1,15 @@
+fullnameOverride: jenkins-exam-movie
+
+image:
+  repository: ali1992/movie-service
+
+healthPath: /api/v1/movies/openapi.json
+
+env:
+  - name: DATABASE_URI
+    valueFrom:
+      secretKeyRef:
+        name: jenkins-exam-db-movie
+        key: DATABASE_URI
+  - name: CAST_SERVICE_HOST_URL
+    value: http://jenkins-exam-cast:8000/api/v1/casts/

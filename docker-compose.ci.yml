@@ -1,0 +1,5 @@
+services:
+  movie_service:
+    image: ali1992/movie-service:${IMAGE_TAG:-local}
+  cast_service:
+    image: ali1992/cast-service:${IMAGE_TAG:-local}

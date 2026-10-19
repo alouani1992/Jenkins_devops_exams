@@ -1,0 +1,13 @@
+fullnameOverride: jenkins-exam-cast
+
+image:
+  repository: ali1992/cast-service
+
+healthPath: /api/v1/casts/openapi.json
+
+env:
+  - name: DATABASE_URI
+    valueFrom:
+      secretKeyRef:
+        name: jenkins-exam-db-cast
+        key: DATABASE_URI

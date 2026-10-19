@@ -1,0 +1,6 @@
+image: postgres:12.1-alpine
+storageClass: local-path
+storageSize: 1Gi
+databases:
+  - movie
+  - cast
